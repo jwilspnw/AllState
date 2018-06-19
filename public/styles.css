@@ -1,0 +1,29 @@
+.stitched {
+   padding: 20px;
+   margin: 10px;
+   color: #804d00;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px dashed #804d00;
+   border-radius: 3px;
+   box-shadow: 0 0 0 4px #754600, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   text-shadow: -1px -1px #aa3030;
+   font-weight: normal;
+}
+
+.details {
+    border-bottom: #000
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #228500;
+}
+
+a:visited {
+    color: #AB6600;
+}
