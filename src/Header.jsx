@@ -94,11 +94,21 @@ class HeaderMobile extends React.Component {
             <div>
                 <img alt="Company Logo" src={require('./biglogo.svg')} style={{
                     marginLeft: 15, marginRight: 15, height: 225, paddingTop: 10, paddingBottom: 10 }}/>
-                <h1 style={{fontFamily: 'Roboto Condensed,  sans-serif',  position: 'Absolute', fontSize: 40, left: 180, top: 20}} >
-                    All<br />
-                    State<br />
-                    Inspections
-                </h1>
+                <div 
+                    style={{
+                        position: 'Absolute',
+                        display: 'flex',
+                        horizonalAlign: 'left',
+                        flexDirection: 'column',
+                        alignItems: 'flex-start',
+                        left: 150, top: 30, }}>
+                    <img alt="All" src={require('./all.png')} style={{
+                        width: 'auto', height: 50, objectFit: 'contain' }} />
+                    <img alt="State" src={require('./state.png')} style={{
+                      width: 'auto', height: 48, objectFit: 'contain', paddingTop: 3  }} />
+                    <img alt="Inspections" src={require('./inspections.png')} style={{
+                    width: 'auto', height: 65, objectFit: 'contain',}} />
+                </div>
             </div>
             <span style={{marginLeft: 15, marginRight: 15}}>
                 Menu Icon
