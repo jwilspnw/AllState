@@ -42,6 +42,65 @@ const continuingEd = {
         </div>
 }
 
+const codeOfEthics = {
+    en: <div>
+        All State Inspections abides by a strict 
+        &thinsp;<a href="https://www.nachi.org/code_of_ethics.htm" target="_blank" rel="noopener noreferrer">Code of Ethics</a>,&thinsp;
+        which puts our duty to you first.
+        </div>,
+    sp: <div>Todas las inspecciones estatales cumplen con un estricto
+        &thinsp;<a href="https://www.nachi.org/code_of_ethics.htm" target="_blank" rel="noopener noreferrer">Código de Ética</a>,&thinsp;
+        que establece nuestro deber primero con usted.
+        </div>
+}
+
+const standardsOfPractice = {
+    en: <div>
+        We follow the inspection industry’s most comprehensive
+        &thinsp;<a href="https://www.nachi.org/sop.htm" target="_blank" rel="noopener noreferrer">Standards of Practice</a>.
+        </div>,
+    sp: <div>
+        Seguimos los 
+        &thinsp;<a href="https://www.nachi.org/sop.htm" target="_blank" rel="noopener noreferrer">Estándares de Práctica</a>&thinsp;
+        más completos de la industria de inspección.
+        </div>
+}
+
+const skillsAndAbilities = {
+    en: 'Skills and Abilities',
+    sp: 'Destrezas y Habilidades'
+}
+
+const tools = {
+    en: 'All State Inspections uses the latest in inspection tools, technology, and reporting software.',
+    sp: 'All State Inspections utilizan lo último en herramientas de inspección, tecnología y software de informes.'
+}
+
+const specialized = {
+    en: 'We offer specialized and ancillary services, in addition to standard, full home inspections, so that we can meet your specific inspection needs – just ask!',
+    sp: 'Ofrecemos servicios especializados y auxiliares, además de inspecciones de viviendas estándar y completas, para que podamos satisfacer sus necesidades específicas de inspección. ¡Todo lo que necesitas hacer es preguntar!'
+}
+
+const ethical = {
+    en: 'Ethical and Personable',
+    sp: 'Ético y agradable'
+}
+
+const unbiased = {
+    en: 'All State Inspections performs a complete, unbiased, visual examination of the property.', 
+    sp: 'Todas las inspecciones estatales realizan un examen visual completo e imparcial de la propiedad.'
+}
+
+const present = {
+    en: 'We encourage our clients to be present during inspections and welcome all questions. It is our goal to help you understand any equipment operation and will highlight the location of important features.',
+    sp: 'Alentamos a nuestros clientes a estar presentes durante las inspecciones y damos la bienvenida a todas las preguntas. Nuestro objetivo es ayudarlo a comprender cualquier operación de equipo y resaltará la ubicación de características importantes.'
+}
+
+const personal = {
+    en: 'Finally, All State Inspections will work with you on a personal level to both address and remedy any concerns that may exist with your home. All findings are clearly and completely printed out in a narrative report for the client.',
+    sp: 'Finalmente, All State Inspections trabajará con usted a nivel personal para abordar y solucionar cualquier inquietud que pueda existir con su hogar. Todos los hallazgos se imprimen clara y completamente en un informe narrativo para el cliente.'
+}
+
 const WhyAllState = props => (<div name="internachi">
     <h2>
         {header[props.language]}
@@ -61,31 +120,31 @@ const WhyAllState = props => (<div name="internachi">
                 {continuingEd[props.language]}
             </dd>
             <dd>
-                All State Inspections abides by a strict <a href="https://www.nachi.org/code_of_ethics.htm" target="_blank" rel="noopener noreferrer">Code of Ethics</a>, which puts our duty to you first.
+                {codeOfEthics[props.language]}
             </dd>
             <dd>
-                We follow the inspection industry’s most comprehensive <a href="https://www.nachi.org/sop.htm" target="_blank" rel="noopener noreferrer">Standards of Practice</a>.
-            </dd>
-            <dt>
-                Skills and Abilities
-            </dt>
-            <dd>
-                All State Inspections uses the latest in inspection tools, technology, and reporting software.
-            </dd>
-            <dd>
-                We offer specialized and ancillary services, in addition to standard, full home inspections, so that we can meet your specific inspection needs – just ask!
+                {standardsOfPractice[props.language]}
             </dd>
             <dt>
-                Ethical and Personable
+                {skillsAndAbilities[props.language]}
             </dt>
             <dd>
-                All State Inspections performs a complete, unbiased, visual examination of the property.
+                {tools[props.language]}
             </dd>
             <dd>
-                We encourage our clients to be present during inspections and welcome all questions. It is our goal to help you understand any equipment operation and will highlight the location of important features.
+                {specialized[props.language]}
+            </dd>
+            <dt>
+                {ethical[props.language]}
+            </dt>
+            <dd>
+                {unbiased[props.language]}
             </dd>
             <dd>
-                Finally, All State Inspections will work with you on a personal level to both address and remedy any concerns that may exist with your home. All findings are clearly and completely printed out in a narrative report for the client.
+                {present[props.language]}
+            </dd>
+            <dd>
+                {personal[props.language]}
             </dd>
         </dl>
     </div>

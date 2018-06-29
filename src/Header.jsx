@@ -6,7 +6,11 @@ class Header extends React.Component {
         return (
             <div>
                 <MediaQuery query="(max-width: 1224px)">
-                    <HeaderMobile />
+                    <HeaderMobile
+                        setEnglish={this.props.setEnglish}
+                        setSpanish={this.props.setSpanish}
+                        language={this.props.language}
+                    />
                 </MediaQuery>
                 <MediaQuery query="(min-width: 1225px)">
                     <HeaderFull
@@ -111,8 +115,27 @@ class HeaderMobile extends React.Component {
                 </div>
             </div>
             <span style={{marginLeft: 15, marginRight: 15}}>
-                Menu Icon
-            </span>
+                    <div style={{marginTop: -40}}>
+                    English
+                    <img 
+                        alt="US flag" 
+                        src={require('./usflag.svg')} 
+                        style={
+                            this.props.language === 'en'
+                            ? { height: 15, paddingLeft: 10  }
+                            : { height: 15, paddingLeft: 10, filter: 'grayscale(100%)' }
+                        }
+                        onClick={this.props.setEnglish}/>
+                    <br />
+                    Español
+                    <img alt="Company Logo" src={require('./mxflag.svg')} style={
+                            this.props.language === 'sp'
+                            ? { height: 15, paddingLeft: 10 }
+                            : { height: 15, paddingLeft: 10, filter: 'grayscale(100%)' }
+                        }
+                        onClick={this.props.setSpanish}/>
+                    </div>
+                </span>
         </header>
     }
 }

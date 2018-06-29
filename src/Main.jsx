@@ -2,7 +2,8 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import About from './About';
-import WhyAllState from './WhyAllState'
+import WhyAllState from './WhyAllState';
+import Reviews from './Reviews';
 
 class Main extends React.Component {
     constructor(props) {
@@ -27,7 +28,6 @@ class Main extends React.Component {
         this.setState({
             language: 'sp'
         });
-        console.log(this.state.language);
     }
 
     render() {
@@ -41,18 +41,9 @@ class Main extends React.Component {
                             language={this.state.language}
                         />
                         <div className="main" style={{padding:15}}>
-                        <About language={this.state.language} />
-                        <WhyAllState language={this.state.language} />
-                        <div className="reviews">
-                            <h2>
-                                Reviews
-                            </h2>
-                            <div>
-                            After your inspection we encourage you to leave us a review. Please visit <a href="http://www.homeadvisor.com/write-a-review/36272777/" target="_blank" rel="noopener noreferrer">Home Advisor</a> in order to grade our quality of work and customer service.
-                            <br /><br />
-                            Thank you for visiting our site, we look forward to working with you!
-                            </div>
-                        </div>
+                            <About language={this.state.language} />
+                            <WhyAllState language={this.state.language} />
+                            <Reviews language={this.state.language} />
                         </div>
                     </div>
                 </div>
