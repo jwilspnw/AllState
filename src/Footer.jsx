@@ -15,11 +15,11 @@ export default class Footer extends React.Component {
                 height: 100,
                 marginTop: -100
                 }}>
-                <img alt="Instragram Logo" src={require("./iglogo.svg")} style={{
+                {/* <img alt="Instragram Logo" src={require("./iglogo.svg")} style={{
                     filter: 'invert(100%)',
                     padding: 15,
                     height: 60
-                }}/>
+                }}/> */}
                 <a
                     href='https://www.facebook.com/AllStateInspectionsTC/'
                     target='_blank'
